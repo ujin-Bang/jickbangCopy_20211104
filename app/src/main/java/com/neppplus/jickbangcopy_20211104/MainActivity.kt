@@ -7,8 +7,10 @@ import com.neppplus.jickbangcopy_20211104.datas.RoomData
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+// 방데이터를 담아두기 위한 목록 변수
     val mRooms = ArrayList<RoomData>()
+    
+//    룸어뎁터를 담기 위한 공간 -> 채우는 건onCreate에서 나중에
     lateinit var mRoomAdapter: RoomAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
