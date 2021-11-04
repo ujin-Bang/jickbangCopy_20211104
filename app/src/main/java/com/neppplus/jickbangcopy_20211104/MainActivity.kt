@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     val mRooms = ArrayList<RoomData>()
-    lateinit var mRoomAdapter: RoomData
+    lateinit var mRoomAdapter: RoomAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         mRooms.add(RoomData(8000, "서울시 동대문구 , 5, 1번째방입니다."))
         mRooms.add(RoomData(18000, "서울시 서대문구", 0, "2번째방입니다"))
         mRooms.add(RoomData(29700, "경기도 고양시", 17, "3번째방입니다"))
-        mRooms.add(RoomData(4300, "서울시 중구,"2, "4번째방입니다."))
+        mRooms.add(RoomData(4300, "서울시 중구",2, "4번째방입니다."))
         mRooms.add(RoomData(43300, "서울시 남구", 2, "5번째방입니다."))
 
         mRoomAdapter = RoomAdapter(this, R.layout.room_list_item, mRooms)
