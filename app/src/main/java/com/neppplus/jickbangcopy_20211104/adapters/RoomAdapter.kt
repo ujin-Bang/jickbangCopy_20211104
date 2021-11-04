@@ -32,6 +32,7 @@ class RoomAdapter(val mContext: Context,
 
         txtPrice.text = roomData.getFormattedPrice()
         txtDescription.text = roomData.description
+        txtAddrassAndFloor.text ="${roomData.address}, ${roomData.getFormattedFloor()}"
 
 
         return row
